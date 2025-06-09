@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Scientific Calculator - Perform basic and advanced mathematical operations">
+    <title>Scientific Calculator Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <header class="calculator-header">
+            <h1>Scientific Calculator</h1>
+        </header>
+        <main class="calculator" role="main" aria-label="Scientific Calculator">
+            <!-- Display Section -->
+            <div class="display-section">
+                <div class="display" id="display" aria-live="polite" aria-label="Calculator display">
+                    <div class="expression" id="expression"></div>
+                    <div class="result" id="result">0</div>
+                </div>
+                <div class="angle-toggle">
+                    <button id="angleToggle" class="toggle-btn" aria-label="Toggle between degrees and radians">DEG</button>
+                </div>
+            </div>
+            <!-- Button Grid -->
+            <div class="button-grid" role="grid">
+                <!-- Row 1: Memory and Clear Functions -->
+                <button class="btn memory" data-action="mc" aria-label="Memory Clear">MC</button>
+                <button class="btn memory" data-action="mr" aria-label="Memory Recall">MR</button>
+                <button class="btn memory" data-action="ms" aria-label="Memory Store">MS</button>
+                <button class="btn clear" data-action="ac" aria-label="All Clear">AC</button>
+                <button class="btn clear" data-action="ce" aria-label="Clear Entry">CE</button>
+                <!-- Row 2: Advanced Functions -->
+                <button class="btn function" data-action="sin" aria-label="Sine">sin</button>
+                <button class="btn function" data-action="cos" aria-label="Cosine">cos</button>
+                <button class="btn function" data-action="tan" aria-label="Tangent">tan</button>
+                <button class="btn function" data-action="sqrt" aria-label="Square Root">√</button>
+                <button class="btn function" data-action="square" aria-label="Square">x²</button>
+                <!-- Row 3: More Functions -->
+                <button class="btn function" data-action="ln" aria-label="Natural Log">ln</button>
+                <button class="btn function" data-action="log" aria-label="Logarithm">log</button>
+                <button class="btn function" data-action="exp" aria-label="Exponent">exp</button>
+                <button class="btn function" data-action="factorial" aria-label="Factorial">x!</button>
+                <button class="btn operator" data-action="/" aria-label="Divide">÷</button>
+                <!-- Row 4: Numbers and Operators -->
+                <button class="btn number" data-number="7" aria-label="Seven">7</button>
+                <button class="btn number" data-number="8" aria-label="Eight">8</button>
+                <button class="btn number" data-number="9" aria-label="Nine">9</button>
+                <button class="btn operator" data-action="*" aria-label="Multiply">×</button>
+                <button class="btn operator" data-action="-" aria-label="Subtract">−</button>
+                <!-- Row 5 -->
+                <button class="btn number" data-number="4" aria-label="Four">4</button>
+                <button class="btn number" data-number="5" aria-label="Five">5</button>
+                <button class="btn number" data-number="6" aria-label="Six">6</button>
+                <button class="btn operator" data-action="+" aria-label="Add">+</button>
+                <button class="btn equals" data-action="=" aria-label="Equals">=</button>
+                <!-- Row 6 -->
+                <button class="btn number" data-number="1" aria-label="One">1</button>
+                <button class="btn number" data-number="2" aria-label="Two">2</button>
+                <button class="btn number" data-number="3" aria-label="Three">3</button>
+                <button class="btn decimal" data-action="." aria-label="Decimal point">.</button>
+                <button class="btn sign" data-action="±" aria-label="Plus minus">±</button>
+                <!-- Row 7 -->
+                <button class="btn number zero" data-number="0" aria-label="Zero">0</button>
+            </div>
+        </main>
+        <footer class="calculator-footer">
+            <p>&copy; 2025 Scientific Calculator Pro</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
